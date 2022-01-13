@@ -8,6 +8,7 @@ class Annonce {
     String ref
     Boolean status = Boolean.FALSE
 
+    //Handled in Api has to be handled in app
     Date dateCreated
     Date lastUpdated
 

@@ -42,3 +42,33 @@ Be sure to :
 	- In application.groovy :
 		- grails.web.disable.multipart = false
 
+##API
+---
+
+Work done :
+***
+
+- USER / ANNONCE REQUESTS HANDLED 
+	- Clean up slave entity in associations while deleting
+
+- Init lastUpdated dateCreated in API
+
+- Handle HTTP responses
+
+- SpringSecurity (required token for acces to api)
+
+***
+
+- Using :
+
+	- services doing the necessary tasks required by the request to the gorm
+
+	- respond with :
+		- 2 forms : XML / JSON for get requests
+		- with an appropriate http status code using a service for a clean code
+
+- COMMENT:
+
+WE DONT NEED ACTUALLY TO HANDLE ILUSTRATION ASSCOATION SINCE WE DONT UPDATE THIS PART OF THE ENTITY 'ANNONCE'
+WITH OTHER PARTS IN THE SAME REQUEST ( WE JUST AD AN ILLUSTRATION TO AN EXISTING ANNONCE )
+

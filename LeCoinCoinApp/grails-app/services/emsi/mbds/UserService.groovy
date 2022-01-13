@@ -9,6 +9,8 @@ interface UserService {
 
     List<User> list(Map args)
 
+    List<User> list()
+
     Long count()
 
     void delete(Serializable id)
